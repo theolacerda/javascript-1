@@ -1,10 +1,10 @@
-*{
-  height:100%;
-  }
+body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
 
-body{
-  background-color:#252C37;
-}
 bg-video{
   position:fixed;
   right:0;
