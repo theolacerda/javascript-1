@@ -11,9 +11,7 @@ html,body{
   color:var(--c1);
   scroll-behavior:smooth;
 }
-body{
-  background: var(--c4);
-}
+
  
   a{
     color:inherit;
