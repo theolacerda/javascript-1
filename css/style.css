@@ -55,6 +55,7 @@ body {
 .menu a.active {
   background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
   opacity: 1;
+  color:var(--c5);
 }
 
 
