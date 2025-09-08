@@ -29,7 +29,7 @@ body {
   background-size: cover;     
   background-position: center; 
   background-repeat: no-repeat;
-  filter: brightness(80%);     
+   
 }
 :root{
   --c1:#F2F2F2;
