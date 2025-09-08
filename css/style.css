@@ -4,7 +4,6 @@
 
 html,body{
   margin:0;
-  background-color: var(--c4);
   padding:0;
   font-family:"PT Serif", serif;
   font-weight: 400;
@@ -110,3 +109,4 @@ section h2 {
 section p.lead {
   color: var(--c2);
   font-weight: 400;
+}
