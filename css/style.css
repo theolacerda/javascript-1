@@ -16,8 +16,13 @@ html,body{
   a{
     color:inherit;
     text-decoration:none;
-    background-color: var(--c5);
+    
   }
+  .menu a:hover{
+  background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+  opacity: 1;
+}
+
   img{width:100%;
     display:block;
   }
