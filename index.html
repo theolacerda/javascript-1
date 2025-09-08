@@ -1,38 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primeira Guerra </title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-     <link rel="stylesheet" type="text/css" href="css/style.css">
-     <link rel="stylesheet" href="css/nav.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primeira Guerra</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="css/nav.css">
 </head>
 <body>
-     <nav class="nav">
+  <!-- NAV -->
+  <nav class="nav">
     <div class="container">
-      
-      <div class="menu">
-        <a href="index.html">Ínicio</a>
+      <div class="logo">História</div>
+      <button class="hamburger" id="hamburger">&#9776;</button>
+      <div class="menu" id="menu">
+        <a href="index.html">Início</a>
         <a href="sobre.html">Sobre</a>
         <a href="contato.html">Contato</a>
       </div>
-      
     </div>
   </nav>
 
-   <section class="hero">
+  <!-- HERO -->
+  <section class="hero">
     <div class="container">
-      <h1>Primeira guerra Mundial</h1>
-      
+      <h1>Primeira Guerra Mundial</h1>
+      <p>A guerra que mudou o século XX.</p>
     </div>
   </section>
+
+  <!-- CONTEÚDO -->
   <section>
     <div class="container">
       <h2>Seção de Conteúdo</h2>
-      <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, saepe? Aut repellat, vitae, dolorem at nesciunt nam eum aspernatur dolor eius ipsum suscipit deleniti autem corporis molestiae odit. Quaerat, id.</p>
+      <p class="lead">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, saepe?
+        Aut repellat, vitae, dolorem at nesciunt nam eum aspernatur dolor eius
+        ipsum suscipit deleniti autem corporis molestiae odit. Quaerat, id.
+      </p>
     </div>
   </section>
-    
+
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const menu = document.getElementById("menu");
+
+    hamburger.addEventListener("click", () => {
+      menu.classList.toggle("active");
+    });
+  </script>
 </body>
 </html>
