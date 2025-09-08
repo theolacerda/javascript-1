@@ -4,15 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Primeira Guerra</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navegação -->
-  <nav class="menu">
+  <!-- Navbar -->
+  <nav class="nav">
     <div class="container">
-      <a href="index.html">Início</a>
-      <a href="sobre.html">Sobre</a>
-      <a href="contato.html">Contato</a>
+      <div class="logo">Primeira Guerra</div>
+      <button class="menu-toggle" id="menu-toggle">☰</button>
+      <div class="menu" id="menu">
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+      </div>
     </div>
   </nav>
 
@@ -29,11 +33,20 @@
     <div class="container">
       <h2>Seção de Conteúdo</h2>
       <p class="lead">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-        Rem, saepe? Aut repellat vitae dolorem at nesciunt nam eum aspernatur 
-        dolor eius ipsum suscipit deleniti autem corporis molestiae odit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Rem, saepe? Aut repellat, vitae, dolorem at nesciunt nam eum 
+        aspernatur dolor eius ipsum suscipit deleniti autem corporis 
+        molestiae odit. Quaerat, id.
       </p>
     </div>
   </section>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
