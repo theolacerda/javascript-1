@@ -12,9 +12,7 @@ html,body{
   color:var(--c1);
   scroll-behavior:smooth;
 }
-body{
-  background-color: var(--c4);
-}
+
    
   a{
     color:inherit;
@@ -80,6 +78,13 @@ body{
   place-items: center;
   isolation: isolate;
   text-align: center;
+}
+.hero::before{
+  content: "";
+  position: absolute;
+  inset:0;
+  background: var(--c4);
+  
 }
 
 .hero h1 {
