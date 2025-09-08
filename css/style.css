@@ -38,12 +38,7 @@ body {
   --c4:#171717;
   --c5:#d60000;
 }
-.brand {
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  font-size: 1.2rem;
-  color: var(--c1);
-}
+
 .menu {
   display: flex;
   gap: 0.5rem;
