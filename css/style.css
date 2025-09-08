@@ -11,6 +11,9 @@ html,body{
   color:var(--c1);
   scroll-behavior:smooth;
 }
+body{
+  background: var(--c4);
+}
  
   a{
     color:inherit;
@@ -26,9 +29,10 @@ html,body{
   img{width:100%;
     display:block;
   }
-  .container{width:min(1100px,95%);
+  .container{
+    width:min(1100px,95%);
     margin:auto;
-    background: var(--c4);
+   
   }
 
 
