@@ -29,7 +29,7 @@ a{
 
 /* HERO */
 .hero {
-  background-image: url('../midia/img_1.webp');
+  background-image: url('img_1.webp');
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
