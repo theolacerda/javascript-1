@@ -14,7 +14,7 @@ html,body{
 }
    
   a{
-    color:inherit;
+    color:var(--c5);
     text-decoration:none;
   }
   img{width:100%;
