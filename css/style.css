@@ -31,13 +31,7 @@ html,body{
     margin:auto;
   }
 
-body {
-  background-image: url('midia/img_1.webp');  
-  background-size: cover;     
-  background-position: center; 
-  background-repeat: no-repeat;
-   
-}
+
 :root{
   --c1:#F2F2F2;
   --c2:#BFBFBF;
@@ -70,24 +64,13 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  min-height: 100vh;
+  min-height: 80vh;
   display: grid;
   place-items: center;
   isolation: isolate;
   text-align: center;
 }
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -2;
-}
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-}
+
 .hero h1 {
   font-size: clamp(2rem, 4vw, 3rem);
   margin: 0 0 0.6rem;
