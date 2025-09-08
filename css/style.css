@@ -58,9 +58,8 @@ body {
   transition: all 0.2s ease;
 }
 .menu a:hover{
-  background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+  background: linear-gradient(180deg, var(--c5));
   opacity: 1;
-  color:var(--c5);
 }
 
 
