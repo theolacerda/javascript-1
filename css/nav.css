@@ -6,3 +6,63 @@ nav {
     z-index: 100;
     box-shadow: 0 2px 5px rgba(0,0,0,0.5);
 }
+.nav-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+nav .brand {
+    color: #C61E00;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+nav .menu a {
+    color: #faf0e8;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 6px 8px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav .menu a:hover,
+nav .menu a.active {
+    background: #C61E00;
+    color: #faf0e8;
+}
+
+nav .cta {
+    background: #C61E00;
+    border: none;
+    color: #faf0e8;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: opacity 0.3s;
+}
+
+nav .cta:hover {
+    opacity: 0.8;
+}
+
+@media(max-width:768px){
+    
+    .menu {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background: #252C37;
+        position: absolute;
+        top: 50px;
+        right: 10px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .menu.show {
+        display: flex;
+    }
+}
