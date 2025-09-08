@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
 
 :root {
-  --c1: #F2F2F2;
-  --c2: #BFBFBF;
-  --c3: #9B9D9C;
-  --c4: #171717;
-  --c5: #d60000;
+  --c1:#F2F2F2;
+  --c2:#BFBFBF;
+  --c3:#9B9D9C;
+  --c4:#171717;
+  --c5:#d60000;
 }
 
 html, body {
@@ -13,9 +13,8 @@ html, body {
   padding: 0;
   font-family: "PT Serif", serif;
   font-weight: 400;
-  font-style: normal;
+  background: var(--c4);
   color: var(--c1);
-  background: var(--c4); /* fundo padrão escuro */
   scroll-behavior: smooth;
 }
 
@@ -24,29 +23,45 @@ a {
   text-decoration: none;
 }
 
+img {
+  width: 100%;
+  display: block;
+}
+
 .container {
   width: min(1100px, 95%);
   margin: auto;
 }
 
-/* ---------- MENU ---------- */
+/* Navbar */
+.nav {
+  background: rgba(23,23,23,0.6);
+  backdrop-filter: blur(6px);
+  padding: 0.5rem 1rem;
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: bold;
+  color: var(--c1);
+}
+
 .menu {
   display: flex;
-  justify-content: center;
-  gap: 1rem;
-  background: rgba(23, 23, 23, 0.9);
-  backdrop-filter: blur(6px);
-  padding: 0.75rem 1rem;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
+  gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
 .menu a {
   padding: 0.55rem 0.8rem;
-  border-radius: 8px;
+  border-radius: 12px;
   color: var(--c1);
   opacity: 0.9;
   transition: all 0.2s ease;
@@ -57,10 +72,20 @@ a {
   opacity: 1;
 }
 
-/* ---------- HERO ---------- */
+/* Botão hamburguer */
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--c1);
+  cursor: pointer;
+  display: none;
+}
+
+/* Hero */
 .hero {
-  background: linear-gradient(rgba(23, 23, 23, 0.6), rgba(23, 23, 23, 0.6)),
-              url("../img/img_1.webp"); /* caminho corrigido */
+  background: linear-gradient(rgba(23,23,23,0.5), rgba(23,23,23,0.5)),
+              url('img_1.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -68,35 +93,56 @@ a {
   display: grid;
   place-items: center;
   text-align: center;
-  padding-top: 60px; /* evita menu sobrepor */
 }
 
 .hero h1 {
   font-size: clamp(2rem, 4vw, 3rem);
-  margin-bottom: 0.6rem;
+  margin: 0 0 0.6rem;
   color: var(--c1);
 }
 
 .hero p {
-  max-width: 800px;
+  max-width: 900px;
   line-height: 1.6;
   color: var(--c2);
 }
 
-/* ---------- SECTIONS ---------- */
+/* Conteúdo */
 section {
   padding: 64px 0;
-  border-top: 1px dashed rgba(255, 255, 255, 0.06);
-  background: var(--c4); /* garante fundo escuro */
+  border-top: 1px dashed rgba(255,255,255,0.06);
+  background: var(--c4);
 }
 
 section h2 {
   font-size: clamp(1.6rem, 2.5vw, 2.2rem);
-  margin-bottom: 0.75rem;
+  margin: 0 0 0.75rem;
   color: var(--c1);
 }
 
 section p.lead {
   color: var(--c2);
   font-weight: 400;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    background: rgba(23,23,23,0.95);
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
 }
