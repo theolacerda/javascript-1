@@ -11,13 +11,7 @@ html,body{
   color:var(--c1);
   scroll-behavior:smooth;
 }
-body{
-  background: var(--c4);
-}
-section{
-  background: var(--c4);
-}
-   
+ 
   a{
     color:inherit;
     text-decoration:none;
@@ -34,6 +28,7 @@ section{
   }
   .container{width:min(1100px,95%);
     margin:auto;
+    background: var(--c4);
   }
 
 
