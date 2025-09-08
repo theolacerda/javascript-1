@@ -14,8 +14,9 @@ html,body{
 }
    
   a{
-    color:var(--c5);
+    color:inherit;
     text-decoration:none;
+    background-color: var(--c5);
   }
   img{width:100%;
     display:block;
