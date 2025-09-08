@@ -86,10 +86,7 @@ html,body{
   background: var(--c4);
 
 }
-.hero>*{
-  position: relative;
-  z-index:2;
-}
+
 .hero h1 {
   font-size: clamp(2rem, 4vw, 3rem);
   margin: 0 0 0.6rem;
