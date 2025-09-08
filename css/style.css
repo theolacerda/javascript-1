@@ -25,7 +25,7 @@ html,body{
   }
 
 body {
-  background-image: url('img_1.webp');  
+  background-image: url('midia/img_1.webp');  
   background-size: cover;     
   background-position: center; 
   background-repeat: no-repeat;
@@ -70,7 +70,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(0,0,0,0.55), rgba(0,0,0,0.7)), url('img_1.webp') center/cover no-repeat;
+  background: linear-gradient(180deg, rgba(0,0,0,0.55), rgba(0,0,0,0.7)), url('midia/img_1.webp') center/cover no-repeat;
   z-index: -2;
 }
 .hero::after {
