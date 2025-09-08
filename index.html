@@ -1,28 +1,22 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Primeira Guerra</title>
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- NAV -->
-  <nav class="nav">
+  <!-- Navegação -->
+  <nav class="menu">
     <div class="container">
-      <div class="logo">História</div>
-      <button class="hamburger" id="hamburger">&#9776;</button>
-      <div class="menu" id="menu">
-        <a href="index.html">Início</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="contato.html">Contato</a>
-      </div>
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="contato.html">Contato</a>
     </div>
   </nav>
 
-  <!-- HERO -->
+  <!-- Hero -->
   <section class="hero">
     <div class="container">
       <h1>Primeira Guerra Mundial</h1>
@@ -30,25 +24,16 @@
     </div>
   </section>
 
-  <!-- CONTEÚDO -->
+  <!-- Conteúdo -->
   <section>
     <div class="container">
       <h2>Seção de Conteúdo</h2>
       <p class="lead">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, saepe?
-        Aut repellat, vitae, dolorem at nesciunt nam eum aspernatur dolor eius
-        ipsum suscipit deleniti autem corporis molestiae odit. Quaerat, id.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Rem, saepe? Aut repellat vitae dolorem at nesciunt nam eum aspernatur 
+        dolor eius ipsum suscipit deleniti autem corporis molestiae odit.
       </p>
     </div>
   </section>
-
-  <script>
-    const hamburger = document.getElementById("hamburger");
-    const menu = document.getElementById("menu");
-
-    hamburger.addEventListener("click", () => {
-      menu.classList.toggle("active");
-    });
-  </script>
 </body>
 </html>
