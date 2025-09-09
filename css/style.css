@@ -13,7 +13,7 @@ html, body {
   padding: 0;
   font-family: "PT Serif", serif;
   font-weight: 400;
-  background: var(--c4);
+  
   color: var(--c1);
   scroll-behavior: smooth;
 }
