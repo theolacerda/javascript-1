@@ -76,9 +76,8 @@ img {
   display: none;
 }
 
-.hero {
+ .hero {
   position: relative;
-  background-repeat: no-repeat;
   height: 100vh;
   background: url('https://theolacerda-create.github.io/html-css/img02.webp') center/cover no-repeat;
   display: grid;
