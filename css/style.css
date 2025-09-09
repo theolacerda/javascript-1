@@ -106,15 +106,7 @@ img {
   text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
 }
 
-.hero p {
-  position: relative;
-  z-index: 1;
-  margin-top: 0.6rem;
-  color: var(--c5);
-  font-size: 1.1rem;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
-  
-}
+
 
 /* Conteúdo */
 section {
