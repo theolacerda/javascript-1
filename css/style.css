@@ -95,6 +95,10 @@ img {
 }
 
 .hero p {
+  background: rgba(0,0,0,0.5);
+  padding: 0.5rem 1rem;
+  border-radius: 8px; 
+   display: inline-block;
   max-width: 900px;
   line-height: 1.6;
   color: var(--c2);
