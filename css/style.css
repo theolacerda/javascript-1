@@ -76,8 +76,14 @@ img {
   display: none;
 }
 
-
-
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url('https://theolacerda-create.github.io/html-css/img02.webp') center/cover no-repeat;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
 
 .hero::after {
   content: "";
