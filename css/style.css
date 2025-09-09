@@ -80,12 +80,12 @@ img {
 
  .hero {
   position: relative;
-  height: 100vh;
+  height: 50vh;
   background: url('https://theolacerda-create.github.io/html-css/pm.jpg') center/cover no-repeat;
   display: grid;
   place-items: center;
   text-align: center;
-  background: rgba(0,0,0,0.7);
+ filter: brightness(0.5); 
 }
 
 .hero h1 {
@@ -112,6 +112,7 @@ section h2 {
   font-size: clamp(1.6rem, 2.5vw, 2.2rem);
   margin: 0 0 0.75rem;
   color: var(--c1);
+  text-align: center;
 }
 
 section p.lead {
