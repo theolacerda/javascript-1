@@ -89,6 +89,10 @@ img {
 }
 
 .hero h1 {
+  background: rgba(0,0,0,0.5);
+  padding: 0.5rem 1rem;
+  border-radius: 8px; 
+   display: inline-block;
   font-size: clamp(2rem, 4vw, 3rem);
   margin: 0 0 0.6rem;
   color: var(--c1);
