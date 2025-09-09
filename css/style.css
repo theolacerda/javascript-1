@@ -81,17 +81,14 @@ img {
   display: none;
 }
 
-/* Hero */
-.hero {
-  background-image: url('pm.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 80vh;
+
+ .hero {
+  position: relative;
+  height: 100vh;
+  background: url('https://theolacerda-create.github.io/html-css/pm.jpg') center/cover no-repeat;
   display: grid;
   place-items: center;
   text-align: center;
-  z-index:1;
 }
 
 .hero h1 {
