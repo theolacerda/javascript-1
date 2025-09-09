@@ -85,7 +85,7 @@ img {
   display: grid;
   place-items: center;
   text-align: center;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.7);
 }
 
 .hero h1 {
