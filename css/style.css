@@ -62,7 +62,7 @@ img {
 }
 
 .menu a:hover {
-  background: var(--c5);
+  color: var(--c5);
   opacity: 1;
 }
 
