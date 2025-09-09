@@ -81,6 +81,7 @@ img {
   height: 100vh;
   background: url('https://theolacerda-create.github.io/html-css/img02.jpg');
   background-repeat: no-repeat;
+  border: solid red 1px;
   display: grid;
   place-items: center;
   text-align: center;
