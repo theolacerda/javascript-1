@@ -99,6 +99,7 @@ img {
   line-height: 1.6;
   color: var(--c2);
   z-index:2;
+  text-align: justify;
 }
 
 /* Conteúdo */
