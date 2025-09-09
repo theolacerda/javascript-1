@@ -63,6 +63,7 @@ img {
 
 .menu a:hover {
   color: var(--c5);
+  background: none;
   opacity: 1;
 }
 
