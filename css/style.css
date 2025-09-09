@@ -47,10 +47,6 @@ img {
   justify-content: space-between;
 }
 
-.logo {
-  font-weight: bold;
-  color: var(--c1);
-}
 
 .menu {
   display: flex;
@@ -71,7 +67,7 @@ img {
   opacity: 1;
 }
 
-/* Botão hamburguer */
+
 .menu-toggle {
   background: none;
   border: none;
@@ -89,6 +85,7 @@ img {
   display: grid;
   place-items: center;
   text-align: center;
+  background: rgba(0,0,0,0.4);
 }
 
 .hero h1 {
