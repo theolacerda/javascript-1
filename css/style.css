@@ -85,7 +85,7 @@ img {
   display: grid;
   place-items: center;
   text-align: center;
- filter: brightness(0.5); 
+ filter: brightness(0.7); 
 }
 
 .hero h1 {
