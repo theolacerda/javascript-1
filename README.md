@@ -1,3 +1,2 @@
 # html-css
-Trabalho de html e css do curso de Desenvolvimento de Sistemas 
-Sesi 
+Atividade de js sobre sistemas de compra e venda
