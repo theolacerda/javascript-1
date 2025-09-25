@@ -2,13 +2,17 @@ let Qnt = 0;
 
 function comprar() {
     let qtdCompra = parseInt(document.getElementById("qtdCompra").value);
-    if (qtdCompra > 0) {
+    if(qtdCompra > 1 && qtdCompra !== 69) {
         Qnt += qtdCompra;
         exibirResultado("Compra realizada! Quantidade atual de peças: " + Qnt);
-    } else {
-        exibirResultado("Quantidade inválida!");
-    }
+    } else if (qtdCompra===1) {
+       exibirResultado('Ola Mundo');
 }
+else if (qtdCompra===69) {
+       exibirResultado('La ele');
+}
+    }
+
 
 function vender() {
     let qtdVenda = parseInt(document.getElementById("qtdVenda").value);
@@ -28,3 +32,4 @@ function sair() {
 function exibirResultado(mensagem) {
     document.getElementById("resultado").innerText = mensagem;
 }
+
