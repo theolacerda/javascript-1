@@ -1,3 +1,4 @@
+
 body {
     background: linear-gradient(120deg, #e0eafc, #cfdef3);
     font-family: 'Segoe UI', Arial, sans-serif;
@@ -63,8 +64,4 @@ button:hover {
     color: #636e72;
     text-align: center;
     min-height: 24px;
-}
-* {
-    background-color: transparent;
-    font-family: 'Segoe UI', Arial, sans-serif;
 }
