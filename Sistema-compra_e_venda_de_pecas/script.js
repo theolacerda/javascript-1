@@ -2,7 +2,7 @@ let Qnt = 0;
 
 function comprar() {
     let qtdCompra = parseInt(document.getElementById("qtdCompra").value);
-    if(qtdCompra >0) {
+    if(qtdCompra >0 && qtdCompra !==1  && qtdCompra !==69) {
         Qnt += qtdCompra;
         exibirResultado("Compra realizada! Quantidade atual de peças: " + Qnt);
  
