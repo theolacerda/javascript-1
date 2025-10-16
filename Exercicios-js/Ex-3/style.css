@@ -1,88 +1,73 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    color: white;
-}
 
 body {
-    background: linear-gradient(#1354A5 0%, #041832 33.33%, #041832 66.67%, #01080E 100%);
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-body::before {
-    background-image: url("img/code.png");
-    background-repeat: no-repeat;
-    background-position: right;
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0.4;
-}
-
-.container {
-    width: 1200px;
-    height: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 24px;
-    border: 1px solid #1875E8;
-    box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.15);
-    background-image: url("img/Ruido.png");
-    background-size: 100% 100%;
-    position: relative;
-}
-
-.container__conteudo {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    bottom: 0;
-}
-
-.container__informacoes {
-    flex: 1;
-    padding: 20px;
-}
-
-.container__botao {
-    border-radius: 16px;
-    background: #1875E8;
-    padding: 16px 24px;
-    width: 100%;
-    font-size: 24px;
-    font-weight: 700;
-    border: none;
-    margin-top: 16px;
-}
-
-.container__texto {
-    margin: 16px 0 16px 0;
-}
-
-.container__texto-azul {
-    color: #1875E8;
+    background-color:rgb(51, 78, 119);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 72px;
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+h2{
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-h2,
-p,
+section {
+    background: #fff;
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(44, 62, 80, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="number"] {
+    width: 85%;
+    padding: 12px;
+    margin: 18px 0;
+    border: 1px solid #b2bec3;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+    background: #f7fafd;
+}
+
+input[type="number"]:focus {
+    border-color: #0984e3;
+    outline: none;
+}
+
 button {
-    font-family: 'Inter', sans-serif;
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 18px;
+    background: #0984e3;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
 }
 
-h2 {
-    font-size: 32px;
-    font-weight: 400;
+button:hover {
+    background: #74b9ff;
+}
+
+#resultado {
+    margin-top: 24px;
+    font-size: 1.1rem;
+    color: #636e72;
+    text-align: center;
+    min-height: 24px;
 }
