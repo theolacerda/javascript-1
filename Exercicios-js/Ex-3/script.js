@@ -1,4 +1,4 @@
-let num = 5;
+let num = 9;
 let chute = null;
 
 function teste() {
