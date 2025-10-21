@@ -1,5 +1,6 @@
-let num = 9;
+let num = parseInt(Math.random() * 10+1);
 let chute = null;
+let tentativas = 1;
 
 function teste() {
     
@@ -16,10 +17,14 @@ function teste() {
     }
 
     if (chute === num) {
-        exibirResultado("Parabéns! Você acertou o número secreto.");
-    } else {
-        exibirResultado("Tente novamente");
+        exibirResultado("Parabéns! Você acertou o número secreto em " + tentativas + " tentativas.");
+    } else if (chute < num) {
+        exibirResultado("Tente um número maior.");
+    } 
+    else if (chute > num) {
+        exibirResultado("Tente um número menor.");
     }
+    tentativas++;
 }
 
 function sair() {
